@@ -1,0 +1,18 @@
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // 3 colonnes par défaut
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+
+    // Responsivité : réduit à 2 colonnes pour les écrans moyens
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    // Responsivité : réduit à 1 colonne pour les petits écrans
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/cs2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* Variables de couleurs */
+$light-background: #ffffff;
+$dark-background: #121212;
+$light-text: #333333;
+$dark-text: #ffffff;
+$light-button-bg: #f0f0f0;
+$dark-button-bg: #333333;
+$main-color: rgb(22,23,24);
+$color-white: #ffffff;
+
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+* {
+    font-family: "inter", serif;
+    font-optical-sizing: auto;
+    
+}
+
+    

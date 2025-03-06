@@ -1,0 +1,66 @@
+.skills-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+    background: #fff;
+  }
+  
+  .skills {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    white-space: nowrap;
+    animation: scroll-skills 20s linear infinite; /* Réglage vitesse */
+  }
+  
+  /* ✅ Duplique les compétences pour éviter les coupures */
+  .skills-track {
+    display: flex;
+    animation: scroll-skills 20s linear infinite;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    min-width: 100px;
+  }
+  
+  .skill__icon {
+    font-size: 40px;
+    color: #333;
+  }
+  
+  .skill__label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .skill__rating {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+  }
+  
+  .circle--plain {
+    background-color: #4caf50;
+  }
+  
+  /* 🎥 Animation infinie en boucle fluide */
+  @keyframes scroll-skills {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
