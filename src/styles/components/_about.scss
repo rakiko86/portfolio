@@ -1,13 +1,48 @@
-.about-container{
-
-
-p{
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Crée deux colonnes égales */
+    gap: 20px; /* Espace entre les éléments */
+    align-items: center; /* Aligne verticalement les éléments au centre */
+    margin-top: 20px; /* Pour un petit espacement en haut */
+  
+  
+  .about-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 1rem 2rem; 
+    align-items: flex-start; /* Aligne le paragraphe à gauche */
+    gap: 10px; /* Un petit espace entre le texte et le bouton */
+  }
+  
+  .about-container p {
     font-size: 1.5rem;
     font-weight: 200;
- 
-}
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)}
+    padding: 1rem 2rem;
+    margin: 0;
+    line-height: 1.5; /* Pour aérer le texte */
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: end;
+    padding-left: 20px;
+;
+  }
+  
+  button:hover {
+    background-color: #e63434;
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      grid-template-columns: 1fr; /* Sur petits écrans, tout est en colonne */
+      grid-gap: 15px;
+    }
+  }}
+  

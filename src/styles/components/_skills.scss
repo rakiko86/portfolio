@@ -8,16 +8,19 @@
   
   .skills {
     display: flex;
-    gap: 20px;
+    height: 50vh;
+    padding-top: 80px;
+    gap: 30px;
     text-align: center;
     white-space: nowrap;
-    animation: scroll-skills 20s linear infinite; /* Réglage vitesse */
+    animation: scroll-skills 10s linear infinite; /* Réglage vitesse */
+ 
   }
   
   /* ✅ Duplique les compétences pour éviter les coupures */
   .skills-track {
     display: flex;
-    animation: scroll-skills 20s linear infinite;
+    animation: scroll-skills 10s linear infinite;
   }
   
   .skill {
@@ -60,7 +63,7 @@
       transform: translateX(0);
     }
     to {
-      transform: translateX(-50%);
+      transform: translateX(-25%);
     }
   }
   

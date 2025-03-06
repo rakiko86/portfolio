@@ -3,8 +3,9 @@
   justify-content: center;
   align-items: center;
   padding: 50px;
-
-  margin-top: 80px;  // Si tu as un header, tu peux ajuster cet espace pour éviter que le Hero touche le header
+  height: 72vh;
+  margin-top: 80px; 
+  ; // Si tu as un header, tu peux ajuster cet espace pour éviter que le Hero touche le header
 }
 
 .hero-container {

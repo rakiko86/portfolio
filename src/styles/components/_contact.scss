@@ -1,22 +1,20 @@
-h1{
-    text-align: center;
-    margin-top: 50px;
-    font-size: 2.5rem;
-    color: #333;
-  }
+article{
+
+ 
+
   
   
 
 form {
     display: flex;
     flex-direction: column; /* Aligne les éléments en colonne */
-    gap: 20px; /* Espace entre les éléments */
+    gap: 30px; /* Espace entre les éléments */
     max-width: 500px; /* Limite la largeur du formulaire */
     margin: 0 auto; /* Centrer le formulaire horizontalement */
     padding: 20px;
     background-color: #f9f9f9; /* Ajoute une couleur de fond au formulaire */
     border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce pour un effet 3D */
+    /* Ombre douce pour un effet 3D */
   
     label {
       font-size: 16px;
@@ -25,7 +23,7 @@ form {
     }
   
     input, textarea {
-      padding: 10px;
+      padding: 20px;
       font-size: 16px;
       border: 1px solid #ccc;
       border-radius: 4px;
@@ -38,8 +36,8 @@ form {
     }
   
     button {
-      padding: 12px 20px;
-      background-color: #983939;
+      padding: 15px 20px;
+      background-color: #473998;
       color: white;
       border: none;
       border-radius: 4px;
@@ -52,4 +50,4 @@ form {
       }
     }
   }
-  
+}
