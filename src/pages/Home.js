@@ -6,6 +6,7 @@ import Projects from '../pages/Projects';
 import Contact from '../pages/Contact';
 import Footer from '../components/Footer';
 import Skills from '../components/Skills';
+import BackToUp from '../components/BackToUp';
 import '../styles/pages/index.scss';
 
 const Home = () => {
@@ -23,8 +24,9 @@ const Home = () => {
                 <Projects />
                 <Contact />
             </div>
-
+            <BackToUp/>
             <Footer />
+            
         </div>
     );
 };

@@ -1,0 +1,32 @@
+/* Styles pour le bouton de retour */
+.back-to-up {
+    position: fixed;
+    bottom: 30px; /* Positionner la flèche en bas */
+    left: 50%; /* Centrer horizontalement */
+    transform: translateX(-50%); /* Centrer parfaitement */
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+  
+    /* Lors du survol, changer la couleur */
+    &:hover {
+      background-color: var(--dark-sidebar-bg-color);
+      color: var(--dark-title-color);
+    }
+  
+    /* Transition fluide */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  /* Quand la flèche est visible */
+  .back-to-up.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
