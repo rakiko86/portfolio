@@ -26,7 +26,7 @@ const Projects = () => {
 
     return (
         <div>
-            <h1>Projects</h1>
+            <h1>Projets</h1>
             <div className='projects'>
                 {data.map((project) => (
                     <ProjectCard key={project.id} project={project} />

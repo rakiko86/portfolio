@@ -3,7 +3,7 @@ import "../styles/pages/index.scss";
 const Contact = () => {
     return (
         <div>
-            <article>
+            <article className='contact'>
                 <h1>Contact</h1>
                 <section>
                     

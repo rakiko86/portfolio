@@ -1,35 +1,28 @@
 .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Crée deux colonnes égales */
-    gap: 20px; /* Espace entre les éléments */
-    
-    margin-top: 20px; /* Pour un petit espacement en haut */
-    }
-  
-  .about-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; /* Aligne le paragraphe à gauche */
-    gap: 10px; /* Un petit espace entre le texte et le bouton */
-  }
-  
-  .about-container p {
-    font-size: 1.5rem;
-    font-weight: 200;
-    // padding: 1rem 2rem;
-    margin: 0;
-    line-height: 1.5; /* Pour aérer le texte */
-    
-  }
-  
- 
-  
-  
- 
-  @media (max-width: 768px) {
-    .about {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Crée deux colonnes égales */
+  gap: 20px; /* Espace entre les éléments */
+  margin-top: 20px; /* Pour un petit espacement en haut */
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Aligne le paragraphe à gauche */
+  gap: 10px; /* Un petit espace entre le texte et le bouton */
+}
+
+.about-container p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin: 0;
+  line-height: 1.5; /* Pour aérer le texte */
+}
+
+@media (max-width: 768px) {
+  .about {
       grid-template-columns: 1fr; /* Sur petits écrans, tout est en colonne */
       grid-gap: 15px;
-    }
   }
+}

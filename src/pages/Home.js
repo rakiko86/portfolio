@@ -13,16 +13,16 @@ const Home = () => {
     return (
         <div className='home'>
             <div className='container'>
-                <Heros />
-                <About />
+                <div><Heros /></div>
+               <div><About /></div> 
 
                 <div className="skills-section">
-                    <h1>Mes compétences</h1>
+                    <h1 className='competence'>Mes compétences</h1>
                     <Skills />
                 </div>
-
-                <Projects />
-                <Contact />
+<div><Projects /></div>
+                
+              <dir><Contact /></dir>  
             </div>
             <BackToUp/>
             <Footer />
