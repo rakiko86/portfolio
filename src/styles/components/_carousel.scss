@@ -68,8 +68,8 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      background: #333; // Fond semi-transparent
-      color: #fff;
+      background: #9fa9b30f; // Fond semi-transparent
+      color: #333;
       border: none;
       padding: 10px 15px;
       font-size: 24px;
@@ -78,7 +78,7 @@
       transition: background 0.3s ease;
       
       &:hover {
-          background: #9fa9b3;
+          background: #979a9cf3;
       }
   }
 

@@ -4,10 +4,11 @@ const Contact = () => {
     return (
         <div>
             <article>
-                <h1>Contact me</h1>
+                <h1>Contact</h1>
                 <section>
                     
-                    <form action="">
+                    <form action="#" method="post">
+                        <input type="hidden" name="form-name" value="contact" />
                         <label htmlFor="name">Name:</label>
                         <input type="text" id="name" name="name" required />
                         <label htmlFor="email">Email:</label>

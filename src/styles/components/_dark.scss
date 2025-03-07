@@ -12,7 +12,7 @@
   // Couleurs pour le mode sombre
   --dark-body-bg-color: #242424;
   --dark-text-color: #d8d8d8;
-  --dark-sidebar-bg-color: #171717;
+ 
   --dark-title-color: #ffffff;
   --dark-date-color: #e6ef71;
 
@@ -103,28 +103,8 @@ button {
   color: var(--dark-icon-color);
 }
 
-// Grille
-.grid__row {
-  margin: 1.2rem 0;
-}
 
 
-
-// // Sidebar
-// .sidebar {
-//   padding: 1.5rem;
-//   background-color: var(--sidebar-bg-color);
-// }
-
-// .dark .sidebar {
-//   background-color: var(--dark-sidebar-bg-color);
-// }
-
-// // Actions (les boutons)
-// .actions {
-//   display: flex;
-//   justify-content: space-between;
-// }
 
 // Cercle pour le mode sombre/claire
 .circle {

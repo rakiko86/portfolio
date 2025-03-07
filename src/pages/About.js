@@ -22,7 +22,7 @@ const About = () => {
                 </p>
             </div>
             </div>
-            <div>
+            <div className='feedback'>
             {/* Le bouton qui bascule l'affichage du carrousel */}
             <button className='feedbackBut' onClick={toggleCarousel}>
                 {showCarousel ? 'Masquer les feedback' : 'Voir plus'}
