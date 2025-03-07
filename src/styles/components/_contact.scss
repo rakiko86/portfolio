@@ -1,4 +1,4 @@
-article{
+
 
  
 
@@ -31,13 +31,13 @@ form {
       transition: border-color 0.3s ease;
   
       &:focus {
-        border-color: #581425; /* Change la couleur de la bordure lorsqu'on est sur le champ */
+        border-color: #9fa9b3 ; /* Change la couleur de la bordure lorsqu'on est sur le champ */
       }
     }
   
     button {
       padding: 15px 20px;
-      background-color: #473998;
+      background-color: #333;
       color: white;
       border: none;
       border-radius: 4px;
@@ -46,8 +46,7 @@ form {
       transition: background-color 0.3s ease;
   
       &:hover {
-        background-color: #360d12; /* Changement de couleur au survol */
+        background-color:  #9fa9b3; /* Changement de couleur au survol */
       }
     }
   }
-}

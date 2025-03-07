@@ -11,7 +11,8 @@ const About = () => {
         setShowCarousel(prevState => !prevState);
     };
 
-    return (
+    return ( 
+        <div>
         <div className='about'> 
             <h1>À propos de moi</h1>
             
@@ -20,9 +21,10 @@ const About = () => {
                     Ayant un parcours qui combine la rigueur et la patience acquises dans la pâtisserie, ainsi que le sens des priorités et la pédagogie de mon expérience en enseignement, me permet aujourd'hui de concevoir des projets web avec méthode et créativité, en apportant des solutions innovantes et de qualité. Mon objectif est de continuer à fusionner mes différentes passions et compétences dans un environnement dynamique et collaboratif.
                 </p>
             </div>
+            </div>
             <div>
             {/* Le bouton qui bascule l'affichage du carrousel */}
-            <button onClick={toggleCarousel}>
+            <button className='feedbackBut' onClick={toggleCarousel}>
                 {showCarousel ? 'Masquer les feedback' : 'Voir plus'}
             </button>
 

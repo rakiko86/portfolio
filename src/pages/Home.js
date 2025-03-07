@@ -7,52 +7,24 @@ import Contact from '../pages/Contact';
 import Footer from '../components/Footer';
 import Skills from '../components/Skills';
 import '../styles/pages/index.scss';
+
 const Home = () => {
     return (
-        
-        <div>
-            <main>
-           
-            
-    <div>
+        <div className='home'>
+            <div className='container'>
+                <Heros />
+                <About />
 
-    <Heros />
-    </div>
-    <div>
-        
-    <About/>
-    </div>
-   
-        
-    <div>
-    <h1>Mes compétences</h1>
-            <Skills/>
-    </div>
-            <div>
-            <Projects/>
+                <div className="skills-section">
+                    <h1>Mes compétences</h1>
+                    <Skills />
+                </div>
+
+                <Projects />
+                <Contact />
             </div>
-            <div>
-            <Contact/>
-            </div>
-            
-    </main>
-        
-           
-           
-            
-    <footer>
-    <Footer/>
-    </footer>
-           
-           
-                
-               
-           
-           
-        
-            
-          
-            
+
+            <Footer />
         </div>
     );
 };

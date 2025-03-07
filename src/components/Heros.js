@@ -24,13 +24,13 @@ const Heros = () => {
                         </div>
                         <div className="social-links">
                             <a href="https://www.linkedin.com/in/rekia-harrat-65829b22b/" target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+                                <FontAwesomeIcon icon={faLinkedin} />
                             </a>
                             <a href="https://github.com/rakiko86" target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faGithub} /> GitHub
+                                <FontAwesomeIcon icon={faGithub} /> 
                             </a>
                             <a href="mailto:rekia.harrat86@gmail.com">
-                                <FontAwesomeIcon icon={faEnvelope} /> Email
+                                <FontAwesomeIcon icon={faEnvelope} />
                             </a>
                         </div>
                     </div>

@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/cs2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Whisper&display=swap");
+
 /* Variables de couleurs */
 $light-background: #ffffff;
 $dark-background: #121212;
@@ -8,7 +11,8 @@ $light-button-bg: #f0f0f0;
 $dark-button-bg: #333333;
 $main-color: rgb(22,23,24);
 $color-white: #ffffff;
-
+$color-button: #000000;
+$color-title:rgb(160, 105, 41);
 
 /* Global styles */
 body {
@@ -17,16 +21,92 @@ body {
 }
 
 
-
 * {
-    font-family: "inter", serif;
+    font-family: "inter", serif, sans-serif, ;
     font-optical-sizing: auto;
     
 }
-h1{
-    text-align: center;
-    margin-top: 50px;
+
+   h1 {
+    display: flex;
+    justify-content: center;
     font-size: 2.5rem;
-    color: #333;
-  }
+    font-weight: 700;
+     color: #524f4f;     
+    font-family: "inter", sans-serif;
+    margin-bottom: 1rem;} 
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Whisper&display=swap");
+    
+    /* 🎨 Variables de couleurs */
+    $light-background: #ffffff;
+    $dark-background: #121212;
+    $light-text: #333333;
+    $dark-text: #ffffff;
+    $light-button-bg: #f0f0f0;
+    $dark-button-bg: #333333;
+    $main-color: rgb(22, 23, 24);
+    $color-white: #ffffff;
+    $color-button: #000000;
+    $color-title: rgb(30, 24, 18);
+    
+    /* 🌍 Global styles */
+    body {
+        font-family: "Inter", sans-serif;
+        background-color: $light-background;
+        color: $light-text;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    /* ✅ Mode sombre */
+    body.dark-mode {
+        background-color: $dark-background;
+        color: $dark-text;
+    }
+    
+    /* 🖋 Titres */
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: $color-title;
+        font-family: "Inter", sans-serif;
+        margin-bottom: 1rem;
+    }
+    
+    /* Mode sombre pour les titres */
+    body.dark-mode h1 {
+        color: lighten($color-title, 20%);
+    }
+    
+    /* 🎛 Boutons */
+    button {
+        background-color: $light-button-bg;
+        color: $light-text;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    
+        &:hover {
+            background-color: darken($light-button-bg, 10%);
+        }
+    }
+    
+    /* Bouton en mode sombre */
+    body.dark-mode button {
+        background-color: $dark-button-bg;
+        color: $dark-text;
+    
+        &:hover {
+            background-color: lighten($dark-button-bg, 10%);
+        }
+    }
+    
+    /* 📌 Section principale */
+    .home {
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
     

@@ -67,73 +67,105 @@
 
         .description {
             font-size: 1rem;
-            color: #ddd; // Texte légèrement plus clair pour contraster avec le fond sombre
+            color: #fff; // Texte légèrement plus clair pour contraster avec le fond sombre
         }
 
-        .toggle-feedback {
-            margin-top: 10px;
-            padding: 5px 10px;
-            border: none;
-            background-color: #007bff;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
+    }
+}
 
-            &:hover {
-                background-color: #0056b3;
-            }
-        }
-
-        .feedback {
-            margin-top: 10px;
+    @media (max-width: 1024px) { // Tablettes et petits écrans
+        .project-card {
             padding: 10px;
-            background: #f9f9f9;
-            border-radius: 5px;
-
-            h4 {
-                margin-bottom: 5px;
+            margin: 8px;
+            border-radius: 6px;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    
+            h2 {
+                font-size: 1.3rem;
             }
-
-            .mentor-feedback {
-                display: flex;
-                flex-direction: column;
-                gap: 5px;
+    
+            .cover-container {
+                height: 180px; // Réduit la hauteur de l'image
+            }
+    
+            .project-card-content {
+                padding: 8px;
+    
+                .description {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    
+       
+    }
+    
+    @media (max-width: 768px) { // Smartphones et petits écrans
+        .project-card {
+            padding: 8px;
+            margin: 5px;
+            width: 100%; // Utilise toute la largeur disponible
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            h2 {
+                font-size: 1.1rem;
+            }
+    
+            .cover-container {
+                height: 150px; // Encore plus réduit sur mobile
+            }
+    
+            .project-card-content {
+                padding: 6px;
+                text-align: center;
+    
+                .description {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    
+        .modal-content {
+            width: 90%;
+            max-width: 600px;
+            padding: 12px;
+    
+            h2 {
+                font-size: 1.2rem;
+            }
+    
+            .close-modal {
+                font-size: 1.2rem;
             }
         }
     }
-}
-
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-}
-
-.modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 60%;
-    max-width: 800px;
-    text-align: center;
-    position: relative;
-
-    h2 {
-        margin-bottom: 10px;
+    
+    @media (max-width: 480px) { // Très petits écrans
+        .project-card {
+            padding: 5px;
+            margin: 3px;
+            width: 100%;
+            border-radius: 4px;
+            gap: 10px;
+    
+            h2 {
+                font-size: 1rem;
+            }
+    
+            .cover-container {
+                height: 120px;
+            }
+    
+            .project-card-content {
+                padding: 5px;
+    
+                .description {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    
+       
     }
-
-    .close-modal {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        background: none;
-        border: none;
-        font-size: 1.5rem
-    }}

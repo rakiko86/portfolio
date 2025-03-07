@@ -1,0 +1,19 @@
+.feedbackBut {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #333;
+    transition: background-color 0.3s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    margin: 0 auto; /* Centrage horizontal */
+}
+  
+  .feedbackBut:hover {
+    background-color: #9fa9b3;
+  }

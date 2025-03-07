@@ -11,6 +11,7 @@ const skills = [
   { id: 10, title: 'Express.js', rating: 3, icon: 'SiExpress' },
   { id: 11, title: 'MongoDB', rating: 3, icon: 'SiMongodb' },
   { id: 12, title: 'Sass', rating: 4, icon: 'FaSass' },
+  { id: 13, title: 'Postman', rating: 4, icon: 'SiPostman' },
 ];
 
 export default skills;

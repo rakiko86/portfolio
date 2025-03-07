@@ -22,11 +22,11 @@ const CarouselModal = ({ project, onClose }) => {
                 <h2>{project.title}</h2>
 
                 <div className="carousel">
-                    <button className="prev" onClick={prevSlide}>⬅</button>
+                    <button className="prev" onClick={prevSlide}>&lt;</button>
                     
                     <img src={project.pictures[currentIndex]} alt={`${project.title} - ${currentIndex + 1}`}/>
                     
-                    <button className="next" onClick={nextSlide}>➡</button>
+                    <button className="next" onClick={nextSlide}>&gt;</button>
                 </div>
 
                 <p>{project.text}</p>

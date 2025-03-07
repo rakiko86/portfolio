@@ -2,9 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
-  height: 72vh;
-  margin-top: 80px; 
+  height: 100vh;
+  
   ; // Si tu as un header, tu peux ajuster cet espace pour éviter que le Hero touche le header
 }
 
@@ -25,10 +24,11 @@
 }
 
 .profile-img {
-  width: 200px;
+  width: 250px;
   height: auto;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin: 40px;
+  padding: 20px;
 }
 
 .right-side {
@@ -38,6 +38,8 @@
   align-items: flex-start;
   max-width: 400px;
   gap: 20px;
+  margin: 40px;
+  padding: 20px;
 }
 
 .download-cv {
@@ -47,16 +49,17 @@
 }
 
 .download-button {
-  padding: 10px 20px;
-  background-color: #ff0011;
-  color: white;
+  padding: 8px;
+  background-color: #333;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
   
   &:hover {
-      background-color: #0056b3;
+      background-color: #9fa9b3;
+      color: #fff;
   }
 }
 
@@ -64,7 +67,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-size: 1.1rem;
+  font-size: 2rem;
 }
 
 .social-links a {
@@ -78,8 +81,8 @@
   transition: background-color 0.3s;
 
   &:hover {
-      background-color: #007bff;
-      color: white;
+      background-color: #9fa9b3;
+      color: #fff;
   }
 }
 
