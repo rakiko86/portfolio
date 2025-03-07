@@ -16,7 +16,7 @@ const Header = () => {
                 {/* Logo à gauche */}
                 <div className='' > 
 
-                    <Link to="CV.js" className='logo'>HARRAT Rekia</Link>
+                    <Link to="" className='logo'>HARRAT Rekia</Link>
                 </div>
 
                 {/* Bouton Menu Hamburger */}

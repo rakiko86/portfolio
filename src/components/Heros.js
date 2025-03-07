@@ -10,7 +10,7 @@ const Heros = () => {
         <div>
             <section className="hero-section">
                 <div className="hero-container">
-                <img src="./src/images/mine.webp" alt="me" className="profile-img" />
+                <img src="./mine.webp" alt="me" className="profile-img" />
                     <div className="left-side">
                     <p><TypingEffect /></p>
                         

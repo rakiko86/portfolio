@@ -17,7 +17,7 @@ const DarkMode = () => {
       document.body.classList.remove(lightTheme, darkTheme);
       document.body.classList.add(themeMode);
       localStorage.setItem("theme", themeMode);
-    }, [themeMode]); // Exécute cette fonction lorsque `themeMode` change
+    }, [themeMode]); // Exécute cette fonction lorsque themeMode change
   
     // Basculer le thème
     const switchTheme = () => {
@@ -34,4 +34,4 @@ const DarkMode = () => {
     );
 };
 
-export default DarkMode;
+export default DarkMode; 

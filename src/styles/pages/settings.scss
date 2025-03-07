@@ -76,37 +76,4 @@ body {
         margin-bottom: 1rem;
     }
     
-    /* Mode sombre pour les titres */
-    body.dark-mode h1 {
-        color: lighten($color-title, 20%);
-    }
-    
-    /* 🎛 Boutons */
-    button {
-        background-color: $light-button-bg;
-        color: $light-text;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    
-        &:hover {
-            background-color: darken($light-button-bg, 10%);
-        }
-    }
-    
-    /* Bouton en mode sombre */
-    body.dark-mode button {
-        background-color: $dark-button-bg;
-        color: $dark-text;
-    
-        &:hover {
-            background-color: lighten($dark-button-bg, 10%);
-        }
-    }
-    
-    /* 📌 Section principale */
-    .home {
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    
+   
