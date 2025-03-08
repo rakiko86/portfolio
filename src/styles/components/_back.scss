@@ -1,32 +1,32 @@
-/* Styles pour le bouton de retour */
+// Style global pour le bouton de retour vers le haut
 .back-to-up {
-    position: fixed;
-    bottom: 30px; /* Positionner la flèche en bas */
-    left: 50%; /* Centrer horizontalement */
-    transform: translateX(-50%); /* Centrer parfaitement */
-    background-color: #333;
-    color: #fff;
-    border-radius: 50%;
-    padding: 10px;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: opacity 0.3s ease, background-color 0.3s ease;
-  
-    /* Lors du survol, changer la couleur */
-    &:hover {
-      background-color: var(--dark-sidebar-bg-color);
-      color: #333;
-    }
-  
-    /* Transition fluide */
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-  }
-  
-  /* Quand la flèche est visible */
-  .back-to-up.visible {
+  position: fixed;
+  bottom: 20px;
+  left: 50%; // Le bouton sera centré horizontalement
+  transform: translateX(-50%); // Décalage pour bien centrer le bouton
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 50%;
+  width: 50px;  // Largeur du cercle
+  height: 50px; // Hauteur du cercle pour un cercle parfait
+  display: flex;
+  align-items: center;  // Centre la flèche verticalement
+  justify-content: center;  // Centre la flèche horizontalement
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  z-index: 1000;
+
+
+
+  // Caché par défaut
+  opacity: 0;
+
+  // Visible après avoir défilé
+  &.visible {
     opacity: 1;
-    visibility: visible;
   }
-  
+
+  .MuiSvgIcon-root {
+    font-size: 2rem; // Taille d'icône modérée pour que la flèche reste centrée et bien visible
+  }
+}

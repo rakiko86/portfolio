@@ -43,7 +43,7 @@ const CarouselProjects = () => {
 
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <h2>{currentFeedback.mentor}</h2>
+            <h4>{currentFeedback.mentor}</h4>
             <img
               src={currentFeedback.note}
               alt={`Feedback ${currentFeedback.id}`}

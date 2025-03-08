@@ -43,3 +43,27 @@ form button {
 form button:hover {
   background-color: #9fa9b3;
 }
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+
+  &.sent {
+      background-color: green;
+  }
+}
