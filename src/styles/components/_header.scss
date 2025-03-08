@@ -15,18 +15,38 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0;
     color: $color-white;
 }
 
 /* Logo */
 
-    .logo {
-        font-size: clamp(2.1rem, 3.5vw, 3rem);
-        font-weight: 500;
-        color: rgb(160, 105, 41);
-        font-family: Whisper, sans-serif;
+#logo {
+    font-size: clamp(2.1rem, 3.5vw, 3rem);
+    font-weight: 500;
+    color: #D69F61;
+    font-family: Whisper, sans-serif;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(90deg, #D69F61, #fff, #D69F61);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shineText 3s infinite linear;
+}
+
+@keyframes shineText {
+    0% {
+        background-position: -100%;
     }
+    100% {
+        background-position: 100%;
+    }
+}
+
+
+
     
 
 
@@ -75,7 +95,7 @@ nav {
             transition: color 0.3s ease-in-out;
 
             &:hover {
-                color: rgb(219, 150, 46);
+                color: #D69F61;
             }
         }
     }
@@ -136,13 +156,13 @@ nav {
             transition: color 0.3s ease-in-out;
 
             &:hover {
-                color: rgb(219, 150, 46);
+                color: #D69F61;
             }
 
             &.active {
-                color: rgb(219, 150, 46); // Garde la couleur jaune
+                color: #D69F61; // Garde la couleur jaune
                 font-weight: bold;
-                border-bottom: 2px solid rgb(219, 150, 46); // Optionnel : soulignement
+                border-bottom: 2px solid #D69F61; // Optionnel : soulignement
             }
         }
     }

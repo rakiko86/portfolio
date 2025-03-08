@@ -19,7 +19,7 @@ const CarouselModal = ({ project, onClose }) => {
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <button className="close-modal" onClick={onClose}>✖</button>
                 
-                <h2>{project.title}</h2>
+                <h3>{project.title}</h3>
 
                 <div className="carousel">
                     <button className="prev" onClick={prevSlide}>&lt;</button>

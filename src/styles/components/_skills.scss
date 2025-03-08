@@ -1,69 +1,81 @@
-.skills-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    padding: 20px 0;
-    background: #fff;
+.skills-container { 
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 40px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.skills__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px; /* Espace sous le titre */
+}
+
+.skills-track {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.skills {
+  display: flex;
+  gap: 30px;
+  white-space: nowrap;
+  animation: scroll-skills 10s linear infinite;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-width: 100px;
+}
+
+.skill__icon {
+  font-size: 40px;
+  color: #333;
+}
+
+.skill__label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.skill__rating {
+  display: flex;
+  gap: 5px;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.circle--plain {
+  background-color: #4caf50;
+}
+
+@keyframes scroll-skills {
+  from {
+    transform: translateX(0);
   }
-  
-  .skills {
-    display: flex;
-    height: 30vh;
-    padding-top: 80px;
-    gap: 30px;
-    text-align: center;
-    white-space: nowrap;
-    animation: scroll-skills 10s linear infinite; /* Réglage vitesse */
- 
+  to {
+    transform: translateX(-50%);
   }
-  
-  /* ✅ Duplique les compétences pour éviter les coupures */
-  .skills-track {
-    display: flex;
-    animation: scroll-skills 10s linear infinite;
+}
+@media (max-width: 768px) {
+  .skills-circle {
+    width: 250px;
+    height: 250px;
   }
-  
+
   .skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    min-width: 100px;
+    transform: scale(0.9); /* Réduction des icônes */
   }
-  
-  .skill__icon {
-    font-size: 40px;
-    color: #333;
-  }
-  
-  .skill__label {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .skill__rating {
-    display: flex;
-    gap: 5px;
-  }
-  
-  .circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc;
-  }
-  
-  .circle--plain {
-    background-color: #4caf50;
-  }
-  
-  /* 🎥 Animation infinie en boucle fluide */
-  @keyframes scroll-skills {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-25%);
-    }
-  }
-  
+}

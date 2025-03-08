@@ -86,7 +86,7 @@ button {
   }
 
   button {
-    color: var(--dark-text-color);
+    color: rgb(219, 150, 46);
   }
   
   .circle {
@@ -132,7 +132,8 @@ button {
   background: var(--dark-circle-color-plain);
 }
 .MuiSvgIcon-root {
-  fill: rgb(219, 150, 46) !important;
+  fill: #D69F61 !important;
+  padding-top: 15px;
 
 
 }

@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
                 <div className="cover-container">
                     <img src={project.cover} alt={project.title} />
                 </div>
-                <h2>{project.title}</h2>
+                <h3>{project.title}</h3>
             </div>
 
             {/* Affichage conditionnel de la modale */}

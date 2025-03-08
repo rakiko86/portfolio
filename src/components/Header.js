@@ -1,23 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import DarkMode from "./DarkMode";
 import "../styles/pages/index.scss";
 
 const Header = () => {
     const location = useLocation(); // Détecte la page actuelle
+    const [menuOpen, setMenuOpen] = useState(false); // ✅ État du menu hamburger
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
 
     return (
         <header>
             <nav>
-                <div className="logo">
-                    <Link to="/" className="logo">HARRAT Rekia</Link>
+                <h1 className="logo">
+                    <Link to="/" id="logo">HARRAT Rekia</Link>
+                </h1>
+
+                {/* ✅ Bouton Hamburger */}
+                <div className={`hamburger-menu ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
                 </div>
 
-                <ul className="nav-links">
+                {/* ✅ Liste des liens avec classe dynamique pour l'affichage mobile */}
+                <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
                     <li>
                         <Link 
                             to="/" 
                             className={location.pathname === "/" ? "active" : ""}
+                            onClick={() => setMenuOpen(false)}
                         >
                             Accueil
                         </Link>
@@ -26,6 +40,7 @@ const Header = () => {
                         <Link 
                             to="/about" 
                             className={location.pathname === "/about" ? "active" : ""}
+                            onClick={() => setMenuOpen(false)}
                         >
                             À propos
                         </Link>
@@ -34,6 +49,7 @@ const Header = () => {
                         <Link 
                             to="/contact" 
                             className={location.pathname === "/contact" ? "active" : ""}
+                            onClick={() => setMenuOpen(false)}
                         >
                             Contact
                         </Link>
@@ -42,6 +58,7 @@ const Header = () => {
                         <Link 
                             to="/projects" 
                             className={location.pathname === "/projects" ? "active" : ""}
+                            onClick={() => setMenuOpen(false)}
                         >
                             Projets
                         </Link>
