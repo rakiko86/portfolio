@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { IconButton } from "@mui/material";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward"; // Flèche vers le haut
-import '../styles/pages/index.scss';
+import "../styles/pages/index.scss";
 
 const BackToUp = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,7 +27,7 @@ const BackToUp = () => {
 
   return (
     <IconButton
-      className={`back-to-up ${isVisible ? 'visible' : ''}`}
+      className={`back-to-up ${isVisible ? "visible" : ""}`}
       onClick={scrollHandler}
       aria-label="Revenir en haut de la page"
     >

@@ -25,14 +25,14 @@ const Projects = () => {
     if (error) return <p>{error}</p>;
 
     return (
-        <div>
+        <section id='projects-section'>
             <h2>Projets</h2>
             <div className='projects'>
                 {data.map((project) => (
                     <ProjectCard key={project.id} project={project} />
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

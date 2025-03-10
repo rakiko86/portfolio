@@ -4,47 +4,46 @@ import '../styles/pages/index.scss';
 
 export const ContactUs = () => {
   const form = useRef();
-  const [isSent, setIsSent] = useState(false); // Gère l'état du bouton et du message
+  const [isSent, setIsSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const userId = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
     emailjs
-      .sendForm('service_aku35pq', 'template_zsapk5q', form.current, {
-        publicKey: '_TPg8W0IWrRda3a87',
-      })
+      .sendForm(serviceId, templateId, form.current, userId)
       .then(
         () => {
           console.log('SUCCESS!');
-          setIsSent(true); // Met à jour l'état après l'envoi
-          form.current.reset(); // Réinitialise le formulaire
+          setIsSent(true);
+          form.current.reset();
 
-          // Masquer le message après quelques secondes
           setTimeout(() => setIsSent(false), 3000);
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          console.error('FAILED...', error);
+          alert("Erreur d'envoi d'email, veuillez réessayer.");
         }
       );
   };
 
   return (
-    <div>
+    <section id='contact-section'>
       <h2>Contact</h2>
 
       {isSent && <p className="success-message">✅ Merci ! Nous allons traiter votre demande.</p>}
       <form ref={form} onSubmit={sendEmail}>
-  <label htmlFor="user_name">Nom</label>
-  <input id="user_name" type="text" name="user_name" required />
+        <label htmlFor="user_name">Nom</label>
+        <input id="user_name" type="text" name="user_name" required />
 
-  <label htmlFor="user_email">Email</label>
-  <input id="user_email" type="email" name="user_email" required />
+        <label htmlFor="user_email">Email</label>
+        <input id="user_email" type="email" name="user_email" required />
 
-  <label htmlFor="message">Message</label>
-  <textarea id="message" name="message" required></textarea>
-
-
-
+        <label htmlFor="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
 
         <button 
           type="submit" 
@@ -53,7 +52,7 @@ export const ContactUs = () => {
           {isSent ? 'Envoyé ✅' : 'Envoyer'}
         </button>
       </form>
-    </div>
+    </section>
   );
 };
 

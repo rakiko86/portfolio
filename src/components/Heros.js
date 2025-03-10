@@ -16,7 +16,7 @@ const Heros = () => {
                     </div>
                     <div className="right-side">
                         <div className="download-cv">
-                            <a href="./src/files/CV.pdf" download="" className="download-button" aria-label="Télécharger mon CV">
+                            <a href="./CV.pdf" download="cv" className="download-button" aria-label="Télécharger mon CV">
                                 CV
                             </a>
                         </div>

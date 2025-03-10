@@ -12,9 +12,10 @@ const About = () => {
     };
 
     return ( 
-        <div>
+        <section id="about-section">
             <div className='about'> 
-            <h2>À propos de moi</h2>
+                
+            <h2 id='about'>À propos de moi</h2>
             
             <div className="about-container">
                 <p>
@@ -25,13 +26,14 @@ const About = () => {
             <div className='feedback'>
             {/* Le bouton qui bascule l'affichage du carrousel */}
             <button className='feedbackBut' onClick={toggleCarousel}>
-                {showCarousel ? 'Masquer les feedback' : 'Voir plus'}
+                {showCarousel ? 'Masquer les feedback' : 'Des avis'}
             </button>
 
             {/* Affiche ou masque le carrousel en fonction de l'état */}
             {showCarousel && <CarouselProjects />}
+            
             </div> 
-        </div>
+        </section>
     );
 };
 
