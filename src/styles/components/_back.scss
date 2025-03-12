@@ -2,6 +2,7 @@
 .back-to-up {
   position: fixed;
   bottom: 20px;
+  top: 10px; // Pour éviter que le bouton ne soit pas visible lorsqu'on est en haut de la page
   left: 50%; // Le bouton sera centré horizontalement
   transform: translateX(-50%); // Décalage pour bien centrer le bouton
   background-color: rgba(0, 0, 0, 0.6);
@@ -27,6 +28,8 @@
   }
 
   .MuiSvgIcon-root {
+    fill: #D69F61 !important;
     font-size: 2rem; // Taille d'icône modérée pour que la flèche reste centrée et bien visible
   }
 }
+

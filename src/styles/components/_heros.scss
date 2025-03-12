@@ -3,8 +3,6 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  
-  ; // Si tu as un header, tu peux ajuster cet espace pour éviter que le Hero touche le header
 }
 
 .hero-container {
@@ -25,10 +23,19 @@
 
 .profile-img {
   width: 100%;
-  max-width: 250px;  /* Limite la taille sur les grands écrans */
+  max-width: 250px;
   height: auto;
   border-radius: 50%;
-  margin: 40px;
+   margin: 40px;
+   padding: 20px;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* S'assurer que le contenu est centré verticalement */
+  text-align: center;
+  max-width: 400px;
   padding: 20px;
 }
 
@@ -47,23 +54,35 @@
 .download-cv {
   display: flex;
   justify-content: center;
-;
+  padding-left: 10px;
 }
 
 .download-button {
-  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 1àpx;
+  /* Espacement entre le texte et l'icône */
   background-color: #333;
   color: #fff;
-  border: none;
+  padding: 10px;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  
-  &:hover {
-      background-color: #9fa9b3;
-      color: #fff;
-  }
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+
 }
+
+.download-button:hover {
+  background-color: #fff;
+  color: #9fa9b3;
+  box-shadow: #9fa9b3 0px 0px 15px;
+}
+
+.download-button svg {
+  width: 15px;
+  height: 15px;
+}
+
 
 .social-links {
   display: flex;
@@ -83,18 +102,33 @@
   transition: background-color 0.3s;
 
   &:hover {
-      background-color: #9fa9b3;
-      color: #fff;
+    background-color: #9fa9b3;
+    color: #fff;
   }
 }
 
 @media (max-width: 768px) {
   .hero-container {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .left-side, .right-side {
-      max-width: 100%;
+  .left-side,
+  .right-side {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .profile-img {
+    margin: 0;
+    padding: 0;
+    max-width: 200px; /* Ajuster la taille de l'image */
+  }
+
+
+  .left-side {
+    justify-content: center; /* Ajouter ou ajuster pour bien centrer sur les petits écrans */
   }
 }

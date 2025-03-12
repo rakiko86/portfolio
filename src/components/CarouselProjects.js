@@ -4,12 +4,12 @@ import projects from "../assets/data/projects";
 import "../styles/pages/index.scss";
 
 const CarouselProjects = () => {
-  const allFeedbacks = projects.flatMap((project) => 
+  const allFeedbacks = projects.flatMap((project) =>
     (project.feedback || []).map((feedback) => ({
       id: feedback.id,
       site: feedback.site,
       note: feedback.note,
-      mentor:feedback.mentor,
+      mentor: feedback.mentor,
     }))
   );
 
@@ -37,9 +37,10 @@ const CarouselProjects = () => {
 
   return (
     <div className="feedback-carousel-container">
-      
       <div className="carousel">
-        <button className="prev" onClick={prevSlide}>&lt;</button>
+        <button className="prev" onClick={prevSlide}>
+          &lt;
+        </button>
 
         <div className="carousel-inner">
           <div className="carousel-item active">
@@ -50,17 +51,19 @@ const CarouselProjects = () => {
               className="feedback-image"
             />
             <a
+              className="mentor-link"
               href={currentFeedback.site}
               target="_blank"
               rel="noopener noreferrer"
             >
-
-              Voir le site du mentor
+              Plus
             </a>
           </div>
         </div>
 
-        <button className="next" onClick={nextSlide}>&gt;</button>
+        <button className="next" onClick={nextSlide}>
+          &gt;
+        </button>
       </div>
     </div>
   );

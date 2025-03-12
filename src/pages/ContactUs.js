@@ -9,12 +9,12 @@ export const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-    const userId = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+  
 
     emailjs
-      .sendForm(serviceId, templateId, form.current, userId)
+      .sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
+         form.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
       .then(
         () => {
           console.log('SUCCESS!');

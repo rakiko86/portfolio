@@ -30,7 +30,7 @@ const CarouselModal = ({ project, onClose }) => {
                 </div>
 
                 <p>{project.text}</p>
-                <a href={project.Url} target="_blank" rel="noopener noreferrer">
+                <a className="project-link" href={project.Url} target="_blank" rel="noopener noreferrer">
                     Voir le projet
                 </a>
             </div>

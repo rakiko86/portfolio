@@ -76,6 +76,12 @@ button {
 .dark {
   background-color: var(--dark-body-bg-color);
   color: var(--dark-text-color);
+  .MuiSvgIcon-root {
+    fill: #D69F61 !important;
+    padding-right: 40px;
+  
+  
+  }
 
  h2, h3 {
     color: var(--dark-title-color);
@@ -84,7 +90,7 @@ button {
   a {
     color: var(--dark-text-color);
   }
-
+  
   button {
     color: rgb(219, 150, 46);
   }
@@ -101,10 +107,10 @@ button {
 // Icone pour basculer le mode sombre/clair
 .darkModeButton {
   color: var(--dark-icon-color);
-  margin-left: auto;
+  margin:0 auto;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  // width: 30px;
+  // height: 30px;
   
 }
 
@@ -132,11 +138,4 @@ button {
 
 .dark .circle--plain {
   background: var(--dark-circle-color-plain);
-}
-.MuiSvgIcon-root {
-  fill: #D69F61 !important;
-  padding-top: 15px;
-  padding-left: 15px;
-
-
 }

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import "../styles/pages/index.scss"; // Assurez-vous d'importer le fichier CSS
 import CarouselProjects from '../components/CarouselProjects'; // Ou le carrousel de feedback que tu utilises
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
     const [showCarousel, setShowCarousel] = useState(false); // État pour gérer l'affichage du carrousel
@@ -26,7 +27,7 @@ const About = () => {
             <div className='feedback'>
             {/* Le bouton qui bascule l'affichage du carrousel */}
             <button className='feedbackBut' onClick={toggleCarousel}>
-                {showCarousel ? 'Masquer les feedback' : 'Des avis'}
+                   <FontAwesomeIcon icon={showCarousel ? faChevronUp : faChevronDown} />
             </button>
 
             {/* Affiche ou masque le carrousel en fonction de l'état */}
