@@ -31,27 +31,28 @@ const Header = () => {
     };
 
     const handleSectionClick = (e, sectionId) => {
-        e.preventDefault();
+        e.preventDefault();  // Prevent default behavior (reload)
         setActiveLink("/#" + sectionId);
         setMenuOpen(false);
 
         if (location.pathname !== "/") {
-            navigate("/");
+            navigate("/");  // Navigate to the home page
             setTimeout(() => {
                 scrollToSection(sectionId);
-                window.history.replaceState(null, "", `/#${sectionId}`);
+                window.history.replaceState(null, "", `/#${sectionId}`); // Update URL without reload
             }, 500);
         } else {
-            scrollToSection(sectionId);
-            window.history.replaceState(null, "", `/#${sectionId}`);
+            scrollToSection(sectionId);  // Smooth scroll to section
+            window.history.replaceState(null, "", `/#${sectionId}`); // Update URL without reload
         }
     };
 
     return (
         <header>
             <nav>
-                <h1 id="logo">HARRAT Rekia</h1>
-
+                <div className="logo">
+                    <h1 id="logo">HARRAT Rekia</h1>
+                </div>
                 <div className={`hamburger-menu ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
                     <div className="bar"></div>
                     <div className="bar"></div>
@@ -60,40 +61,36 @@ const Header = () => {
 
                 <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
                     <li>
-                        <Link 
+                        <Link
                             to="/" 
                             className={activeLink === "/" ? "active" : ""}
-                            onClick={() => setActiveLink("/")}
-                        >
+                            onClick={() => setActiveLink("/")}>
                             Accueil
                         </Link>
                     </li>
                     <li>
-                        <a 
-                            href="/#about-section" 
+                        <Link 
+                            to="/#about-section" 
                             onClick={(e) => handleSectionClick(e, "about-section")}
-                            className={activeLink === "/#about-section" ? "active" : ""}
-                        >
+                            className={activeLink === "/#about-section" ? "active" : ""}>
                             À propos
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a 
-                            href="/#contact-section" 
-                            onClick={(e) => handleSectionClick(e, "contact-section")}
-                            className={activeLink === "/#contact-section" ? "active" : ""}
-                        >
-                            Contact
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                            href="/#projects-section" 
+                        <Link 
+                            to="/#projects-section" 
                             onClick={(e) => handleSectionClick(e, "projects-section")}
-                            className={activeLink === "/#projects-section" ? "active" : ""}
-                        >
+                            className={activeLink === "/#projects-section" ? "active" : ""}>
                             Projets
-                        </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link 
+                            to="/#contact-section" 
+                            onClick={(e) => handleSectionClick(e, "contact-section")}
+                            className={activeLink === "/#contact-section" ? "active" : ""}>
+                            Contact
+                        </Link>
                     </li>
                     <li><DarkMode /></li>
                 </ul>
