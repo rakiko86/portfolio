@@ -31,7 +31,7 @@ const About = () => {
             </button>
 
             {/* Affiche ou masque le carrousel en fonction de l'état */}
-            {showCarousel && <CarouselProjects />}
+            {showCarousel && <CarouselProjects/>}
             
             </div> 
         </section>

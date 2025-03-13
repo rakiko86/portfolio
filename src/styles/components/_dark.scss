@@ -7,6 +7,7 @@
   --text-color: #333333;
   --sidebar-bg-color: #f4f4f4;
   --title-color: #111111;
+  --card-title-color: #D69F61;
 
 
   // Couleurs pour le mode sombre
@@ -31,7 +32,7 @@
 
   --h2-font-size: 1.3rem;
   --h3-font-size: 1.1rem;
-  --h4-font-size: 1rem;
+
 }
 
 // Application des styles généraux
@@ -42,12 +43,14 @@ body {
   color: var(--text-color);
 }
 
- h2, h3 {
+ h2, .skills__title {
   margin-bottom: 0.4rem;
   font-weight: 400;
   color: var(--title-color);
 }
-
+h3{
+ color: var(--card-title-color);
+}
 p {
   margin-bottom: 0.8rem;
 }
@@ -83,10 +86,11 @@ button {
   
   }
 
- h2, h3 {
+ h2,h3 ,.skills__title, .social_links{
     color: var(--dark-title-color);
   }
 
+  }
   a {
     color: var(--dark-text-color);
   }
@@ -102,6 +106,8 @@ button {
   .circle--plain {
     background: var(--dark-circle-color-plain);
   }
+.social_links{
+  color: var(--dark-text-color);
 }
 
 // Icone pour basculer le mode sombre/clair
@@ -129,7 +135,7 @@ button {
 }
 
 .circle--plain {
-  background: var(--circle-color-plain);
+  background: var(---circle-color-plain);
 }
 
 .dark .circle {

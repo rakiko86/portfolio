@@ -7,7 +7,7 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    background: #A3A3A3; // Fond sombre par défaut
+    background: #333; // Fond sombre par défaut
     color: #fff; // Texte en blanc pour contraster avec le fond sombre
     position: relative;
     overflow: hidden;
@@ -65,7 +65,7 @@
         h3 {
             font-size: 1.5rem;
             margin: 10px 0;
-            color: #D69F61;
+            
         }
 
         .description {
@@ -85,7 +85,7 @@
     
             h3 {
                 font-size: 1.3rem;
-                color: #D69F61;
+                
             }
     
             .cover-container {

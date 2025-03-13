@@ -56,7 +56,7 @@ const CarouselProjects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Plus
+            Voir son site
             </a>
           </div>
         </div>

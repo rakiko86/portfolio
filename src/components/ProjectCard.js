@@ -21,7 +21,7 @@ const ProjectCard = ({ project }) => {
                 role="button" // Indique que cet élément est interactif
                 tabIndex={0} // Permet de naviguer dessus avec "Tab"
                 aria-label={`Voir le projet ${project.title}`} // Améliore l’accessibilité
-            >
+             >
                 <div className="cover-container">
                     <img src={project.cover} alt={`Aperçu du projet ${project.title}`} />
                 </div>
