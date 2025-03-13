@@ -9,7 +9,7 @@ import "../styles/pages/index.scss";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div id="home">
       <Heros />
       <About />
       <Skills />

@@ -7,14 +7,14 @@
   --text-color: #333333;
   --sidebar-bg-color: #f4f4f4;
   --title-color: #111111;
-  --date-color: #1f94c2;
+
 
   // Couleurs pour le mode sombre
   --dark-body-bg-color: #242424;
   --dark-text-color: #d8d8d8;
  
   --dark-title-color: #ffffff;
-  --dark-date-color: #e6ef71;
+ 
 
   // Couleurs des icônes
   --icon-color: var(--text-color);
@@ -92,7 +92,7 @@ button {
   }
   
   button {
-    color: rgb(219, 150, 46);
+    color: #fff;
   }
   
   .circle {

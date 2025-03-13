@@ -61,12 +61,28 @@ const Header = () => {
 
                 <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
                     <li>
-                        <Link
-                            to="/" 
-                            className={activeLink === "/" ? "active" : ""}
-                            onClick={() => setActiveLink("/")}>
-                            Accueil
-                        </Link>
+                    <Link
+    to="/"
+    className={activeLink === "/" ? "active" : ""}
+    onClick={(e) => {
+        e.preventDefault();
+        console.log("Clic sur Accueil"); // Vérification du clic
+        setActiveLink("/");
+        setMenuOpen(false);
+
+        if (location.pathname !== "/") {
+            console.log("Redirection vers /");
+            navigate("/");
+        } else {
+            console.log("Déjà sur /, on remonte en haut");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    }}
+>
+    Accueil
+</Link>
+
+
                     </li>
                     <li>
                         <Link 
