@@ -1,50 +1,48 @@
-.feedback{
-    padding: 60px;
-    
+.feedback {
+  padding: 60px;
 }
-.feedbackBut {
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    background-color: #333;
-    transition: background-color 0.3s ease;
-color: #FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto; /* Centrage horizontal */
- 
-      transition: transform 0.3s ease-in-out;
-  
-    
-      &.open .chevron {
-        transform: rotate(180deg);
-    }
-  }
 
-  
-  .feedbackBut:hover {
+.feedbackBut {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* Centrage horizontal */
+
+  transition: transform 0.3s ease-in-out;
+
+  &.open .chevron {
+    transform: rotate(180deg);
+  }
+}
+
+.feedbackBut:hover {
+  background-color: #9fa9b3;
+}
+
+.mentor-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  color: #333;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  box-shadow: #9fa9b3 0px 0px 15px;
+
+  &:hover {
     background-color: #9fa9b3;
-    ;
-  
+    color: #fff;
   }
-  .mentor-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-    color: #333;
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-   box-shadow: #9fa9b3 0px 0px 15px;
-    &:hover {
-      background-color: #9fa9b3;
-      color: #fff;
-    }
-  }
- 
+}

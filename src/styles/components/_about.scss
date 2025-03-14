@@ -22,7 +22,7 @@
 
 @media (max-width: 768px) {
   .about {
-      grid-template-columns: 1fr; /* Sur petits écrans, tout est en colonne */
-      grid-gap: 15px;
+    grid-template-columns: 1fr; /* Sur petits écrans, tout est en colonne */
+    grid-gap: 15px;
   }
 }

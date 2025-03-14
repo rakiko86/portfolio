@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500");
 
 // Définir les couleurs et les variables globales
 :root {
@@ -7,20 +7,18 @@
   --text-color: #333333;
   --sidebar-bg-color: #f4f4f4;
   --title-color: #111111;
-  --card-title-color: #D69F61;
-
+  --card-title-color: #d69f61;
 
   // Couleurs pour le mode sombre
   --dark-body-bg-color: #242424;
   --dark-text-color: #d8d8d8;
- 
+
   --dark-title-color: #ffffff;
- 
 
   // Couleurs des icônes
   --icon-color: var(--text-color);
   --dark-icon-color: var(--dark-text-color);
-  
+
   // Autres variables utiles
   --circle-color: #aaa;
   --circle-color-plain: #555;
@@ -32,7 +30,6 @@
 
   --h2-font-size: 1.3rem;
   --h3-font-size: 1.1rem;
-
 }
 
 // Application des styles généraux
@@ -43,13 +40,14 @@ body {
   color: var(--text-color);
 }
 
- h2, .skills__title {
+h2,
+.skills__title {
   margin-bottom: 0.4rem;
   font-weight: 400;
   color: var(--title-color);
 }
-h3{
- color: var(--card-title-color);
+h3 {
+  color: var(--card-title-color);
 }
 p {
   margin-bottom: 0.8rem;
@@ -80,48 +78,44 @@ button {
   background-color: var(--dark-body-bg-color);
   color: var(--dark-text-color);
   .MuiSvgIcon-root {
-    fill: #D69F61 !important;
+    fill: #d69f61 !important;
     padding-right: 40px;
-  
-  
   }
 
- h2,h3 ,.skills__title, .social_links{
+  h2,
+  h3,
+  .skills__title,
+  .social_links {
     color: var(--dark-title-color);
   }
+}
+a {
+  color: var(--dark-text-color);
+}
 
-  }
-  a {
-    color: var(--dark-text-color);
-  }
-  
-  button {
-    color: #fff;
-  }
-  
-  .circle {
-    background: var(--dark-circle-color);
-  }
+button {
+  color: #fff;
+}
 
-  .circle--plain {
-    background: var(--dark-circle-color-plain);
-  }
-.social_links{
+.circle {
+  background: var(--dark-circle-color);
+}
+
+.circle--plain {
+  background: var(--dark-circle-color-plain);
+}
+.social_links {
   color: var(--dark-text-color);
 }
 
 // Icone pour basculer le mode sombre/clair
 .darkModeButton {
   color: var(--dark-icon-color);
-  margin:0 auto;
+  margin: 0 auto;
   cursor: pointer;
   // width: 30px;
   // height: 30px;
-  
 }
-
-
-
 
 // Cercle pour le mode sombre/claire
 .circle {
@@ -131,7 +125,6 @@ button {
   margin-right: 8px;
   border-radius: 50%;
   background: var(--circle-color);
-  
 }
 
 .circle--plain {

@@ -8,16 +8,14 @@
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 50%;
-  width: 50px;  // Largeur du cercle
+  width: 50px; // Largeur du cercle
   height: 50px; // Hauteur du cercle pour un cercle parfait
   display: flex;
-  align-items: center;  // Centre la flèche verticalement
-  justify-content: center;  // Centre la flèche horizontalement
+  align-items: center; // Centre la flèche verticalement
+  justify-content: center; // Centre la flèche horizontalement
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: opacity 0.3s ease, transform 0.2s ease;
   z-index: 1000;
-
-
 
   // Caché par défaut
   opacity: 0;
@@ -28,8 +26,7 @@
   }
 
   .MuiSvgIcon-root {
-    fill: #D69F61 !important;
+    fill: #d69f61 !important;
     font-size: 2rem; // Taille d'icône modérée pour que la flèche reste centrée et bien visible
   }
 }
-

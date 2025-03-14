@@ -1,21 +1,21 @@
 .projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); // 3 colonnes par défaut
-    gap: 20px; // Espace entre les cartes
-    padding: 20px;
-    justify-content: center;
-    align-items: start; // Permet aux cartes de s'aligner correctement
-    min-height: 100vh; // S'adapte au contenu
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // 3 colonnes par défaut
+  gap: 20px; // Espace entre les cartes
+  padding: 20px;
+  justify-content: center;
+  align-items: start; // Permet aux cartes de s'aligner correctement
+  min-height: 100vh; // S'adapte au contenu
 
-    // Tablettes (2 colonnes)
-    @media (max-width: 1024px) {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px; // Augmente légèrement l'espace sur tablette
-    }
+  // Tablettes (2 colonnes)
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px; // Augmente légèrement l'espace sur tablette
+  }
 
-    // Mobiles (1 colonne)
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;
-        gap: 30px; // Plus d'espace entre les cartes en mode mobile
-    }
+  // Mobiles (1 colonne)
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 30px; // Plus d'espace entre les cartes en mode mobile
+  }
 }
