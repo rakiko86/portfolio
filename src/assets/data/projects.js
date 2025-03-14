@@ -107,7 +107,7 @@ export const projects = [
       id: 2,
       mentor:"Stéphane Didier",
       site: "https://openclassrooms.com/fr/members/7gc6gr6vpb37",
-      note:"src/feedback/stephaneDidier.webp",
+      note:"src/feedback/StephaneDidier.webp",
      }
      ],
       text: `Ce projet est une application de réservation en ligne. Le projet implique l'utilisation de HTML, CSS`,
@@ -157,7 +157,7 @@ export const projects = [
          id: 3,
          mentor:"Vincent Errante",
          site: "https://storycom.fr/",
-         note:"src/feedback/vincentErrante.webp",
+         note:"src/feedback/VincentErrante.webp",
         }
         ],
     },
