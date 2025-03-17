@@ -29,21 +29,22 @@ const DarkMode = () => {
   return (
     <div>
       <IconButton
-        className="dark"
-        onClick={switchTheme}
-        aria-label={
-          themeMode === darkTheme
-            ? "Activer le mode clair"
-            : "Activer le mode sombre"
-        }
-        title={themeMode === darkTheme ? "Mode clair" : "Mode sombre"}
-      >
-        {themeMode === darkTheme ? (
-          <WbSunnyOutlinedIcon />
-        ) : (
-          <Brightness2OutlinedIcon />
-        )}
-      </IconButton>
+  className="dark"
+  onClick={switchTheme}
+  aria-label={
+    themeMode === darkTheme
+      ? "Activer le mode clair"
+      : "Activer le mode sombre"
+  }
+  title={themeMode === darkTheme ? "Mode clair" : "Mode sombre"}
+>
+  {themeMode === darkTheme ? (
+    <WbSunnyOutlinedIcon />
+  ) : (
+    <Brightness2OutlinedIcon />
+  )}
+</IconButton>
+
     </div>
   );
 };

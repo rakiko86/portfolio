@@ -8,6 +8,7 @@ form {
   height: auto;
   background-color: #f9f9f9;
   border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ajout d'ombre pour plus de profondeur */
 }
 
 form label {
@@ -39,12 +40,22 @@ form button {
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 form button:hover {
   background-color: #9fa9b3;
+  transform: scale(1.05); /* Légère augmentation de taille au survol */
 }
+
+form button:focus {
+  outline: none;
+}
+
+form button:active {
+  transform: scale(1); /* Réduit l'élément à sa taille d'origine au clic */
+}
+
 .success-message {
   color: green;
   font-weight: bold;
@@ -62,7 +73,6 @@ form button:hover {
 }
 
 button {
-  background-color: #007bff;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -72,4 +82,21 @@ button {
   &.sent {
     background-color: green;
   }
+}
+
+/* Style pour les messages d'erreur */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+input:valid,
+textarea:valid {
+  border-color: green;
 }

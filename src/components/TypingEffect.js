@@ -16,7 +16,7 @@ const TypingEffect = () => {
     }
   }, [index, text]);
 
-  return <span className="typing-effect">{displayedText}</span>;
+  return <span className="typing-effect"aria-live="polite">{displayedText}</span>;
 };
 
 export default TypingEffect;

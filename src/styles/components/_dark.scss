@@ -128,7 +128,7 @@ button {
 }
 
 .circle--plain {
-  background: var(---circle-color-plain);
+  background: var(--circle-color-plain);
 }
 
 .dark .circle {
@@ -137,4 +137,7 @@ button {
 
 .dark .circle--plain {
   background: var(--dark-circle-color-plain);
+}
+.dark form{
+  color: var(--title-color);
 }

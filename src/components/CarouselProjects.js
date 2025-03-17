@@ -49,6 +49,8 @@ const CarouselProjects = () => {
               src={currentFeedback.note}
               alt={`Feedback ${currentFeedback.id}`}
               className="feedback-image"
+              loading="lazy"
+
             />
             <a
               className="mentor-link"

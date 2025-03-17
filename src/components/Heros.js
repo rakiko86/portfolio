@@ -14,6 +14,7 @@ const Heros = () => {
             src="./mine.webp"
             alt="Portrait de Rekia Harrat"
             className="profile-img"
+            loading="lazy"
           />
           <div className="left-side">
             <p>
@@ -26,7 +27,7 @@ const Heros = () => {
                 href="./CV.pdf"
                 download="cv"
                 class="download-button"
-                aria-label="Télécharger mon CV"
+                aria-label="Télécharger mon CV au format PDF (fichier PDF)" 
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -43,6 +44,7 @@ const Heros = () => {
                   <polyline points="7 10 12 15 17 10"></polyline>
                   <line x1="12" y1="15" x2="12" y2="3"></line>
                 </svg>
+                
               </a>
             </div>
             <div className="social-links">

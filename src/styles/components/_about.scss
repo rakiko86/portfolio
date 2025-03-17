@@ -1,8 +1,16 @@
+:root {
+  --primary-font-size: 1.5rem;
+  --primary-gap: 20px;
+  --secondary-gap: 10px;
+  --line-height: 1.6;
+  --font-weight-light: 200;
+}
+
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Crée deux colonnes égales */
-  gap: 20px; /* Espace entre les éléments */
-  margin-top: 20px; /* Pour un petit espacement en haut */
+  gap: var(--primary-gap); /* Espace entre les éléments */
+  margin-top: 20px; /* Espacement en haut */
 }
 
 .about-container {
@@ -10,19 +18,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start; /* Aligne le paragraphe à gauche */
-  gap: 10px; /* Un petit espace entre le texte et le bouton */
+  gap: var(--secondary-gap); /* Espace entre le texte et le bouton */
 }
 
 .about-container p {
-  font-size: 1.5rem;
-  font-weight: 200;
+  font-size: var(--primary-font-size);
+  font-weight: var(--font-weight-light);
   margin: 0;
-  line-height: 1.5; /* Pour aérer le texte */
+  line-height: var(--line-height); /* Aère le texte */
 }
 
 @media (max-width: 768px) {
   .about {
-    grid-template-columns: 1fr; /* Sur petits écrans, tout est en colonne */
-    grid-gap: 15px;
+    grid-template-columns: 1fr; /* En mode colonne sur petits écrans */
+    grid-gap: 15px; /* Réduit l'espacement entre les éléments sur petits écrans */
+  }
+  
+  .about-container p {
+    font-size: 1.3rem; /* Taille de police un peu plus petite sur les petits écrans */
+    line-height: 1.4; /* Ajustement du line-height pour mieux aérer le texte */
   }
 }

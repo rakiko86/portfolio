@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../styles/pages/index.scss";
-
-const CarouselModal = ({ project, onClose }) => {
+const CarouselModal = React.memo(({ project, onClose }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -21,24 +20,20 @@ const CarouselModal = ({ project, onClose }) => {
         <button className="close-modal" onClick={onClose}>
           ✖
         </button>
-
         <h3>{project.title}</h3>
-
         <div className="carousel">
           <button className="prev" onClick={prevSlide}>
             &lt;
           </button>
-
           <img
             src={project.pictures[currentIndex]}
             alt={`${project.title} - ${currentIndex + 1}`}
+            loading="lazy"
           />
-
           <button className="next" onClick={nextSlide}>
             &gt;
           </button>
         </div>
-
         <p>{project.text}</p>
         <a
           className="project-link"
@@ -51,6 +46,7 @@ const CarouselModal = ({ project, onClose }) => {
       </div>
     </div>
   );
-};
+});
+
 
 export default CarouselModal;

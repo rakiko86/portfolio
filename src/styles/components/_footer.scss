@@ -6,11 +6,29 @@ footer {
   font-size: 14px;
   margin-top: 20px;
   border-top: 1px solid #6c757d;
-  a {
-    color: #fff;
-    text-decoration: none;
-    &:hover {
-      color: #e9ecef;
-    }
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease; /* Pour une animation douce */
+}
+
+footer a:hover {
+  color: #e9ecef;
+  text-decoration: underline; /* Ajouter une soulignure au survol */
+  transform: translateY(-2px); /* Léger effet de survol */
+}
+
+footer a:focus {
+  outline: 3px solid #ffcc00; /* Un contour visible lors du focus */
+  outline-offset: 2px;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+  footer {
+    padding: 15px 0;
+    font-size: 12px;
   }
 }
