@@ -50,6 +50,7 @@ const CarouselProjects = () => {
               alt={`Feedback ${currentFeedback.id}`}
               className="feedback-image"
               loading="lazy"
+              
 
             />
             <a

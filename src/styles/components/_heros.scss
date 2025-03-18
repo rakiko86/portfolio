@@ -106,6 +106,32 @@
     color: #fff;
   }
 }
+.download-cv {
+  position: relative;
+  display: inline-block;
+}
+
+.download-cv .tooltip {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 14px;
+}
+
+.download-cv:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
 
 
 @media (max-width: 768px) {

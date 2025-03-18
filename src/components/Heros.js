@@ -11,10 +11,15 @@ const Heros = () => {
       <section className="hero-section">
         <div className="hero-container">
           <img
-            src="./mine.webp"
-            alt="Portrait de Rekia Harrat"
-            className="profile-img"
-            loading="lazy"
+            //  src="./mine.webp"
+             srcSet="./mini.webp 480w,  ./mine.webp 1200w," 
+              sizes="(max-width: 600px) 480px, (max-width: 1024px) 768px, 1200px"
+              alt="Portrait de Rekia Harrat"
+              className="profile-img"
+            decoding="async"
+              loading="lazy"
+              height={200}
+              width={200}
           />
           <div className="left-side">
             <p>
@@ -26,7 +31,7 @@ const Heros = () => {
               <a
                 href="./CV.pdf"
                 download="cv"
-                class="download-button"
+                className="download-button"
                 aria-label="Télécharger mon CV au format PDF (fichier PDF)" 
               >
                 <svg
@@ -36,15 +41,15 @@ const Heros = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                   <polyline points="7 10 12 15 17 10"></polyline>
                   <line x1="12" y1="15" x2="12" y2="3"></line>
                 </svg>
-                
+                <span className="tooltip">Télécharger mon CV</span>
               </a>
             </div>
             <div className="social-links">

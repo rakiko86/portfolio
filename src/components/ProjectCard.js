@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
         aria-label={`Voir le projet ${project.title}`} // Améliore l’accessibilité
       >
         <div className="cover-container">
-          <img src={project.cover} alt={`Aperçu du projet ${project.title}`} />
+          <img src={project.cover} alt={`Aperçu du projet ${project.title}`} decoding="async" />
         </div>
         <h3>{project.title}</h3>
       </div>
