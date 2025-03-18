@@ -8,7 +8,8 @@ form {
   height: auto;
   background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ajout d'ombre pour plus de profondeur */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Ajout d'ombre pour plus de profondeur */
 }
 
 form label {
@@ -45,7 +46,8 @@ form button {
 
 form button:hover {
   background-color: #9fa9b3;
-  transform: scale(1.05); /* Légère augmentation de taille au survol */
+  transform: scale(1.05);
+  /* Légère augmentation de taille au survol */
 }
 
 form button:focus {
@@ -53,7 +55,8 @@ form button:focus {
 }
 
 form button:active {
-  transform: scale(1); /* Réduit l'élément à sa taille d'origine au clic */
+  transform: scale(1);
+  /* Réduit l'élément à sa taille d'origine au clic */
 }
 
 .success-message {
@@ -67,6 +70,7 @@ form button:active {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -99,4 +103,9 @@ textarea:invalid {
 input:valid,
 textarea:valid {
   border-color: green;
+}
+
+.MuiButtonBase-root-MuiIconButton-root {
+  -webkit-print-color-adjust: auto !important;
+  print-color-adjust: auto !important;
 }
