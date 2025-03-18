@@ -12,13 +12,13 @@ const Heros = () => {
         <div className="hero-container">
           <img
             //  src="./mine.webp"
-            srcSet="./mini.webp 480w,  ./mine.webp 1200w,"
-            sizes="(max-width: 600px) 480px, (max-width: 1024px) 768px, 1200px"
-            alt="Portrait de Rekia Harrat"
-            className="profile-img"
-            decoding="async"
-            height={200}
-            width={200}
+             srcSet="./mini.webp 480w,  ./mine.webp 1200w," 
+              sizes="(max-width: 600px) 480px, (max-width: 1024px) 768px, 1200px"
+              alt="Portrait de Rekia Harrat"
+              className="profile-img"
+               decoding="async"
+              height={200}
+              width={200}
           />
           <div className="left-side">
             <p>
@@ -31,7 +31,7 @@ const Heros = () => {
                 href="./CV.pdf"
                 download="cv"
                 className="download-button"
-                aria-label="Télécharger mon CV au format PDF (fichier PDF)"
+                aria-label="Télécharger mon CV au format PDF (fichier PDF)" 
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

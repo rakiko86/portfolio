@@ -45,6 +45,9 @@ $color-logo: #d69f61;
 
 /* 🌍 Global styles */
 body {
+
+    padding-top: 60px; /* Hauteur de la barre de navigation */
+  
   font-family: "Inter", sans-serif;
   background-color: $light-background;
   color: $light-text;
