@@ -22,9 +22,16 @@ const Skills = () => {
 
             return (
               <div key={skill.id} className="skill">
-                <div className="skill__icon">
-                  {IconComponent && React.createElement(IconComponent)}
-                </div>
+  <div className="skill__icon">
+  {IconComponent &&
+    React.createElement(IconComponent, {
+      "aria-label": skill.title, // Ajoute un label pour l'accessibilité
+       role: "img", // Déclare explicitement le rôle
+      // strokeWidth: "01", // Supprime "0" pour éviter l'erreur
+    })}
+</div>
+
+
                 <p className="skill__label">{skill.title}</p>
                 <div className="skill__rating">
                   {[...Array(5)].map((_, i) => (
