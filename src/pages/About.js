@@ -35,8 +35,8 @@ const About = () => {
           className="feedbackBut"
           onClick={toggleCarousel}
           aria-label={showCarousel ? "Masquer le carrousel" : "Afficher le carrousel"}
-        >
-          <FontAwesomeIcon icon={showCarousel ? faChevronUp : faChevronDown} />
+        >Recommandations
+          <FontAwesomeIcon icon={showCarousel ? faChevronUp : faChevronDown} /> 
         </button>
         {/* Affiche ou masque le carrousel en fonction de l'état */}
         {showCarousel && <CarouselProjects />}

@@ -10,7 +10,8 @@
   font-size: 2rem;
   font-weight: bold;
   color: #333;
-  margin-bottom: 30px; /* Espace sous le titre */
+  margin-bottom: 30px;
+  /* Espace sous le titre */
 }
 
 .skills-track {
@@ -59,6 +60,7 @@
 .circle--plain {
   background-color: #4caf50;
 }
+
 // .skill__icon svg {
 //   color: #000; /* Teste une couleur contrastée */
 // }
@@ -68,10 +70,12 @@
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
 }
+
 @media (max-width: 768px) {
   .skills-circle {
     width: 250px;
@@ -79,6 +83,7 @@
   }
 
   .skill {
-    transform: scale(0.9); /* Réduction des icônes */
+    transform: scale(0.9);
+    /* Réduction des icônes */
   }
 }
